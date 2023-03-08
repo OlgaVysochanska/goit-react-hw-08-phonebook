@@ -1,0 +1,17 @@
+.link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: darkslateblue;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 4px;
+
+}
+
+.navbarAuth {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
