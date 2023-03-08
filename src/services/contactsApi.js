@@ -1,7 +1,5 @@
 import axios from 'axios';
 
-//  https://connections-api.herokuapp.com/docs/
-
 const instance = axios.create({
   baseURL: 'https://connections-api.herokuapp.com',
 });
@@ -11,8 +9,6 @@ export const getAllContacts = async () => {
   console.log(data);
   return data;
 };
-
-getAllContacts();
 
 export const addContact = async id => {
   const { data } = await instance.post('/contacts/', id);

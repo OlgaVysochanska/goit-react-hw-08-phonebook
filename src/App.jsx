@@ -5,15 +5,19 @@ import { Layout } from 'components/Layout/Layout';
 // import { Filter } from './components/Filter/Filter';
 // import { ContactList } from './components/ContactList/ContactList';
 
+import { HomePage } from 'pages/HomePage/HomePage';
 import { RegisterPage } from 'pages/RegisterPage/RegisterPage';
 import { LoginPage } from 'pages/LoginPage/LoginPage';
+import { ContactsPage } from 'pages/ContactsPage/ContactsPage';
 
 export const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/contacts" element={<ContactsPage />} />
         {/* <h1>Phonebook</h1>
         <ContactForm />
 
