@@ -11,6 +11,7 @@ export const RegisterPage = () => {
   const dispatch = useDispatch();
 
   const handleSignup = data => {
+    console.log('handle signup', data);
     dispatch(signup(JSON.stringify(data)));
   };
 
@@ -20,7 +21,6 @@ export const RegisterPage = () => {
 
   return (
     <div>
-      Register page
       <RegisterForm onSubmit={handleSignup} />
     </div>
   );

@@ -1,12 +1,13 @@
 .layout {
-    margin: 0 auto;
-    background-color: darkslateblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+  margin: 0 auto;
+  background-color: darkslateblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
