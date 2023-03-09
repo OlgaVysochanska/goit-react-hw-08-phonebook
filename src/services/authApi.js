@@ -12,7 +12,7 @@ const setToken = token => {
 };
 
 export const signup = async data => {
-  console.log(data);
+  console.log('api signup', data);
   const { data: result } = await authInstance.post('/users/signup', data);
   setToken(result.token);
   return result;
