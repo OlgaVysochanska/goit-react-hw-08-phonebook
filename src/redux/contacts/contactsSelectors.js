@@ -12,3 +12,5 @@ export const selectFilteredContacts = ({ contacts, filter }) => {
 
   return result;
 };
+
+export const selectLoadingContacts = ({ contacts }) => contacts.isLoading;
