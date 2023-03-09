@@ -30,7 +30,7 @@ export const RegisterForm = ({ onSubmit }) => {
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
-      <label>
+      <label className={styles.label}>
         Name
         <input
           className={styles.input}
@@ -39,7 +39,7 @@ export const RegisterForm = ({ onSubmit }) => {
           {...fields.name}
         />
       </label>
-      <label>
+      <label className={styles.label}>
         Email
         <input
           className={styles.input}
@@ -48,7 +48,7 @@ export const RegisterForm = ({ onSubmit }) => {
           {...fields.email}
         />
       </label>
-      <label>
+      <label className={styles.label}>
         Password
         <input
           className={styles.input}
@@ -57,7 +57,9 @@ export const RegisterForm = ({ onSubmit }) => {
           {...fields.password}
         />
       </label>
-      <button type="submit">Register</button>
+      <button className={styles.button} type="submit">
+        Register
+      </button>
     </form>
   );
 };
