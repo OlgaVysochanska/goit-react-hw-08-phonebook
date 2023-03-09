@@ -12,7 +12,7 @@ export const RegisterPage = () => {
 
   const handleSignup = data => {
     console.log('handle signup', data);
-    dispatch(signup(JSON.stringify(data)));
+    dispatch(signup(data));
   };
 
   if (isLogin) {
