@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { selectUser } from 'redux/auth/authSelectors';
 import { logout } from 'redux/auth/authOperations';
 
+import styles from 'components/Navbar/NavbarUser/NavbarUser.module.css';
+
 export const NavbarUser = () => {
   const { email } = useSelector(selectUser);
   const dispatch = useDispatch();
@@ -11,9 +13,11 @@ export const NavbarUser = () => {
     dispatch(logout());
   };
   return (
-    <div>
-      <p>{email}</p>
-      <button onClick={onLogout}>Log out</button>
+    <div className={styles.navbarUser}>
+      <p className={styles.email}>{email}</p>
+      <button className={styles.button} onClick={onLogout}>
+        Log out
+      </button>
     </div>
   );
 };

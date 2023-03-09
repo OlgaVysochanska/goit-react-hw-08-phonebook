@@ -1,6 +1,6 @@
 .filter {
   display: flex;
   gap: 5px;
-  color: darkgreen;
+  color: teal;
   padding: 20px;
 }
