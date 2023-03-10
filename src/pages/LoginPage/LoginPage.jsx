@@ -6,7 +6,7 @@ import { isUserLogin } from 'redux/auth/authSelectors';
 
 import { LoginForm } from 'components/LoginForm/LoginForm';
 
-export const LoginPage = () => {
+const LoginPage = () => {
   const isLogin = useSelector(isUserLogin);
   const dispatch = useDispatch();
 
@@ -24,3 +24,5 @@ export const LoginPage = () => {
     </div>
   );
 };
+
+export default LoginPage;

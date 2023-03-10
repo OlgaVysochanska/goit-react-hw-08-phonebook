@@ -7,7 +7,7 @@ import { Filter } from 'components/Filter/Filter';
 import { ContactList } from 'components/ContactList/ContactList';
 import { Loader } from 'components/Loader/Loader';
 
-export const ContactsPage = () => {
+const ContactsPage = () => {
   const loading = useSelector(selectLoadingContacts);
 
   if (loading) {
@@ -22,3 +22,5 @@ export const ContactsPage = () => {
     </div>
   );
 };
+
+export default ContactsPage;

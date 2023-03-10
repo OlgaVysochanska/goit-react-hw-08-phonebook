@@ -6,7 +6,7 @@ import { isUserLogin } from 'redux/auth/authSelectors';
 
 import { RegisterForm } from 'components/RegisterForm/RegisterForm';
 
-export const RegisterPage = () => {
+const RegisterPage = () => {
   const isLogin = useSelector(isUserLogin);
   const dispatch = useDispatch();
 
@@ -25,3 +25,5 @@ export const RegisterPage = () => {
     </div>
   );
 };
+
+export default RegisterPage;
