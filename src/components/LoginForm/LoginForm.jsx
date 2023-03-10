@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react';
+import PropTypes from 'prop-types';
 
 import { initialState } from './initialState';
 import { fields } from './fields';
@@ -51,4 +52,8 @@ export const LoginForm = ({ onSubmit }) => {
       </button>
     </form>
   );
+};
+
+LoginForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
 };
