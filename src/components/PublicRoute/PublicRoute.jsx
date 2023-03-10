@@ -13,7 +13,7 @@ export const PublicRoute = () => {
   }
 
   if (isLogin) {
-    return <Navigate to="/my-books" />;
+    return <Navigate to="/contacts" />;
   }
 
   return <Outlet />;
