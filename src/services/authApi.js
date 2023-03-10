@@ -33,7 +33,8 @@ export const logout = async token => {
 export const getCurrent = async token => {
   try {
     setToken(token);
-    const { data } = await instance.post('/users/current', token);
+    const { data } = await instance.get('/users/current');
+    console.log('current resp', data);
     return data;
   } catch (error) {
     setToken();

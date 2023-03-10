@@ -25,8 +25,8 @@ export const ContactForm = () => {
       return;
     }
 
-    const phone = data.number;
-    const action = fetchAddContact({ name, phone });
+    const number = data.number;
+    const action = fetchAddContact({ name, number });
     dispatch(action);
   };
 

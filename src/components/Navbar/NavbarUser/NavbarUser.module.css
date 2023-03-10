@@ -3,6 +3,7 @@
   padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 20px;
+  font-size: 18px;
   color: darkslateblue;
   text-decoration: none;
   background-color: white;
@@ -21,4 +22,5 @@
   display: flex;
   gap: 10px;
   justify-content: center;
+  align-items: baseline;
 }

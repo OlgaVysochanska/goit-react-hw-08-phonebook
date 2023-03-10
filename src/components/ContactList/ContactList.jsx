@@ -16,14 +16,25 @@ export const ContactList = () => {
   }, [dispatch]);
 
   const list = useSelector(selectFilteredContacts);
+  const isContacts = Boolean(list.length);
 
   return (
-    <ul className={styles.ul}>
-      {list.map(({ id, name, phone }) => {
-        return (
-          <ContactListItem key={id} name={name} phone={phone} nameId={id} />
-        );
-      })}
-    </ul>
+    <div className={styles.contactList}>
+      {isContacts && (
+        <ul className={styles.ul}>
+          {list.map(({ id, name, number }) => {
+            return (
+              <ContactListItem
+                key={id}
+                name={name}
+                number={number}
+                nameId={id}
+              />
+            );
+          })}
+        </ul>
+      )}
+      {!isContacts && <p className={styles.text}>There are no contacts!</p>}
+    </div>
   );
 };

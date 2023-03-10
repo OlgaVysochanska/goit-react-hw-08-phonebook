@@ -1,6 +1,7 @@
 .filter {
   display: flex;
   gap: 5px;
+  justify-content: flex-start;
   color: teal;
   padding: 20px;
 }
