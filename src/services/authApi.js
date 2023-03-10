@@ -12,7 +12,6 @@ const setToken = token => {
 };
 
 export const signup = async userData => {
-  console.log('api signup', userData);
   const { data } = await instance.post('/users/signup', userData);
   setToken(data.token);
   return data;
@@ -34,7 +33,6 @@ export const getCurrent = async token => {
   try {
     setToken(token);
     const { data } = await instance.get('/users/current');
-    console.log('current resp', data);
     return data;
   } catch (error) {
     setToken();

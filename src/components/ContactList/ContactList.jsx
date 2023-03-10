@@ -1,7 +1,10 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
+import { selectLoadingContacts } from 'redux/contacts/contactsSelectors';
+
 import { ContactListItem } from './ContactListItem/ContactListItem';
+import { Loader } from 'components/Loader/Loader';
 
 import { fetchAllContacts } from 'redux/contacts/contactsOperations';
 import { selectFilteredContacts } from 'redux/contacts/contactsSelectors';
@@ -17,6 +20,12 @@ export const ContactList = () => {
 
   const list = useSelector(selectFilteredContacts);
   const isContacts = Boolean(list.length);
+
+  const loading = useSelector(selectLoadingContacts);
+
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <div className={styles.contactList}>

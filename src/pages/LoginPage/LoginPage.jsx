@@ -11,7 +11,6 @@ const LoginPage = () => {
   const dispatch = useDispatch();
 
   const handleSignup = data => {
-    console.log('handle login', data);
     dispatch(login(data));
   };
 
