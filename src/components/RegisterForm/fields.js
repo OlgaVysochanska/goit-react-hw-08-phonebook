@@ -3,18 +3,18 @@ export const fields = {
     type: 'text',
     name: 'name',
     required: true,
-    placeholder: 'Enter your name',
+    placeholder: 'Example: Name',
   },
   email: {
     type: 'email',
     name: 'email',
     required: true,
-    placeholder: 'Enter your email',
+    placeholder: 'Example: email.mail.com',
   },
   password: {
     type: 'password',
     name: 'password',
     required: true,
-    placeholder: 'Enter your password',
+    placeholder: 'Enter 6 symbols at least',
   },
 };
