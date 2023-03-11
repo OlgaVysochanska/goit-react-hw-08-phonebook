@@ -15,8 +15,10 @@ export const ContactListItem = ({ nameId, name, number }) => {
 
   return (
     <li className={styles.listItem}>
-      <span>{name}:</span>
-      <span>{number}</span>
+      <div className={styles.contactInfo}>
+        <span className={styles.name}>{name}:</span>
+        <span className={styles.number}>{number}</span>
+      </div>
       <button
         className={styles.button}
         onClick={() => handleDeleteContact(nameId)}

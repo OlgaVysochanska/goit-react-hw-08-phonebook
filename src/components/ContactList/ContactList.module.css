@@ -1,7 +1,6 @@
 .contactList {
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-right: 10px;
   text-align: center;
 }
 
@@ -10,6 +9,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-left: 0;
 }
 
 .text {
